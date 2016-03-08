@@ -245,6 +245,7 @@ module.exports = (function () {
 	}, {
 		key: "replaceXml",
 		value: function replaceXml(subContent, newText) {
+			newText = newText || '';
 			this.templaterState.moveCharacters(this.templaterState.tagStart.numXmlTag, newText.length, subContent.text.length);
 			this.content = subContent.replace(newText).fullText;
 			return this.content;
