@@ -10,7 +10,6 @@ tags
 *.spec.js
 *.spec.map
 *.log
-/js
 /build
 /browser
 examples/index.html
